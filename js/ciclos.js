@@ -1,4 +1,4 @@
-//Ingresar 20 números. Determinar y mostrar la cantidad de números pares, la cantidad de ceros y la cantidad de números negativos ingresados
+//Ingresar 6 números. Determinar y mostrar la cantidad de números pares, la cantidad de ceros y la cantidad de números negativos ingresados
 
 let par = 0;
 let cero = 0;
@@ -10,7 +10,7 @@ for (let i=0; i<=5; i++){
     if (numero % 2 == 0 && numero!=0 && numero>0){
         par++;
     }
-    else if (numero == 0 && numero != ""){
+    else if (numero == 0){
         cero++;
     }
     else if (numero < 0){
