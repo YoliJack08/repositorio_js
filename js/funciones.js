@@ -16,11 +16,10 @@
 
 // banco(dia, hora);
 
-let num1 =  Number(prompt("Dame un número:"));
-let num2 = Number(prompt("Dame un segundo número:"));
+
 const Vinicial = (d,t) => d/t ;
 const vg = t2 => 9.81 * t2;
-const Vfinal = (x,y) = x+y;
+const Vfinal = (x,y) => x+y;
 
 let total = Vfinal (Vinicial(5,3), vg(10));
 
