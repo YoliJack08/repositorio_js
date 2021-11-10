@@ -1,26 +1,33 @@
 
-// let dia =  prompt("Inserta un día de la semana:");
-// let hora = prompt("Inserte una hora en formato 24hrs:");
-
-// function banco (dia, hora){
-//     if (dia != "Sabado" || dia != "Domingo"){
-//         if (hora >=9 && hora <=16){
-//             alert("Adelante puedes acudir a la sucursal bancaria");
-//         }else{
-//                 alert("Estas fuera de horario laboral");
-//             }
-//         }else{ 
-//         alert("Lo sentimos, no laboramos fines de semana");
-//          }
-//     } 
-
-// banco(dia, hora);
 
 
-const Vinicial = (d,t) => d/t ;
-const vg = t2 => 9.81 * t2;
-const Vfinal = (x,y) => x+y;
+function banco (){
 
-let total = Vfinal (Vinicial(5,3), vg(10));
+let dia =  prompt("Inserta un día de la semana:");
+let hora = prompt("Inserte una hora en formato 24hrs:");
+let diaMayus=dia.toUpperCase
 
-console.log(total);
+if (diaMayus == "LUNES" || diaMayus == "MARTES" || diaMayus == "MIERCOLES" || diaMayus == "JUEVES" || diaMayus == "VIERNES"){
+       if(hora >=9 && hora <=18){
+           alert("Pasale antes de que cierren")
+       }else{
+            alert("No está abierto, el horario es de 9 a 18 horas")
+       }
+   }else if (diaMayus == "SABADO" || diaMayus == "DOMINGO"){
+        alert("Día de descanso, ve entre semana");
+   }else{
+       alert("Invalid data, inserta un día");
+   }
+  
+}
+
+banco();
+
+
+// const Vinicial = (d,t) => d/t ;
+// const vg = t2 => 9.81 * t2;
+// const Vfinal = (x,y) => x+y;
+
+// let total = Vfinal (Vinicial(5,3), vg(10));
+
+// console.log(total);
