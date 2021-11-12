@@ -21,7 +21,7 @@ class Usuario {
 
     precio(){
        this.subPrecio= this.subPrecio * 1.16;
-       alert ("Gracias! stás por comprar " + this.nom_Producto )
+       alert ("Gracias! estás por comprar " + this.nom_Producto )
        alert("Por este producto pagaras $" + this.subPrecio )
     }
   }
